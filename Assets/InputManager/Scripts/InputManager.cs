@@ -92,7 +92,7 @@ public class InputManager : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
 
     #region START
 
-    //SINGLETON CLASS
+    //SINGLETON
     private static InputManager instance;
     public static InputManager Instance { get { return instance; }}
 
