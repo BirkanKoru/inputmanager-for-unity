@@ -22,7 +22,7 @@ public class RaycastTester : MonoBehaviour
     void Update()
     {
 
-        if(inputManager.IsDragBegin)
+        if(inputManager.IsPointerDown)
         {
             hit = inputManager.RaycastControl(mask);
 
@@ -49,7 +49,7 @@ public class RaycastTester : MonoBehaviour
                 
         }
 
-        if(inputManager.IsDragEnd)
+        if(inputManager.IsPointerUp)
         {
             pointer.gameObject.SetActive(false);
 
